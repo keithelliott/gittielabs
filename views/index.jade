@@ -1,5 +1,406 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    // Start Homepage
+    div#homepage
+
+        div.container
+            div.sixteen.columns
+                img.logo(src="images/logo.png")
+            div.slider-text
+                div.sixteen.columns
+                    div.line
+
+                div.twelve.columns
+                    div#slidecaption
+
+                div.four.columns
+                    a#prevslide.load-item
+                    a#nextslide.load-item
+    // End Homepage
+
+    //Start Navigation
+    nav
+
+        div.container
+
+            div.twelve.columns
+
+                // Start Nav Links
+                ul.links
+                    li
+                        a(href="#about") About
+                    li
+                        a(href="#culture") Culture
+                    li
+                        a(href="#services") Services
+                    li
+                        a(href="#portfolio") Portfolio
+                    li
+                        a(href="#contact") Contact
+                    li
+                        a(href="#homepage")
+                            img(alt="", src="images/top-icon.png")
+                // End Nav Links
+
+                // Start Dropmenu for mobile
+                select.dropmenu(name="dropmenu", onChange="moveTo(this.value)")
+                    option(value="", selected="selected") Menu
+                    option(value="#homepage") Top
+                    option(value="#about") About
+                    option(value="#culture") Culture
+                    option(value="#services") Services
+                    option(value="#portfolio") Portfolio
+                    option(value="#contact") Contact
+                // End Dropmenu for mobile
+
+            div.four.columns
+
+                // Social Icons
+                ul.social-icons
+                    li
+                        a(href="http://www.facebook.com/gittielabs")
+                            img(alt="", src="images/social-icons/facebook.png")
+                    li
+                        a(href="https://twitter.com/gittielabs")
+                            img(alt="", src="images/social-icons/twitter.png")
+                // End Icons
+    // End Navigation
+
+    // Start About Page
+    div#about
+
+        div.container
+
+            div.sixteen.columns
+
+                h1 About Gittie Labs
+                div.one-text
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat
+                    a(href="#homepage") hendrerit dictum.
+                    span Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+            // Start Profile
+            div.one-third.column
+                div.img-wrp
+                    img.scaleimg(alt="",src="images/team/profile1.jpg")
+                    div.overlay-wrp
+                        div.overlay
+                        ul.social-icons.overlay-content
+                            li
+                                a(href="https://twitter.com/mrkeithelliott")
+                                    img(alt="", src="images/social-icons/twitter-green.png")
+                            li
+                                a(href="http://www.linkedin.com/in/keithelliott")
+                                    img(alt="", src="images/social-icons/linkedin-green.png")
+
+                h3 Keith Elliott
+                p.job-position Founder
+                p.description Lorem ipsum dolor sit amet, consectetur
+                    a(href="#homepage") adipiscing elit
+                    p . Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+            // End Profile
+
+            // Start Profile
+            div.one-third.column
+                div.img-wrp
+                    img.scaleimg(alt="", src="images/team/profile2.jpg")
+                    div.overlay-wrp
+                        div.overlay
+                        ul.social-icons.overlay-content
+                            li
+                                a(href="https://twitter.com/timsavery")
+                                    img(alt="", src="images/social-icons/twitter-green.png")
+                            li
+                                a(href="http://www.linkedin.com/in/timsavery")
+                                    img(alt="", src="images/social-icons/linkedin-green.png")
+
+                h3 Tim Savery
+                p.job-position Founder
+                p.description Lorem ipsum dolor sit amet, consectetur
+                    a(href="#homepage") adipiscing elit
+                    p . Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+            // End Profile
+
+            // Start Profile
+            div.one-third.column
+                div.img-wrp
+                    img.scaleimg(alt="", src="images/team/profile2.jpg")
+                    div.overlay-wrp
+                        div.overlay
+                        ul.social-icons.overlay-content
+                            li
+                                a(href="https://twitter.com/wil_wang")
+                                    img(alt="", src="images/social-icons/twitter-green.png")
+                            li
+                                a(href="www.linkedin.com/in/wilwang")
+                                    img(alt="", src="images/social-icons/linkedin-green.png")
+
+                h3 Wil Wang
+                p.job-position Founder
+                p.description Lorem ipsum dolor sit amet, consectetur
+                    a(href="#homepage") adipiscing elit
+                    p . Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            // End Profile
+
+    // End About Page
+
+    // Start First Parallax Background (Quote)
+    div#parallax1
+        div.bg1
+        div.pattern
+        div.container
+            div.vertical-text
+                p.prlx-quote You can't use up CREATIVITY The more you use, the more you have.
+                div.prlx-author Maya Angelou
+
+    // End First Parallax Background (Quote)
+
+    // Start Culture Page
+    div#culture
+
+        div.container
+            div.sixteen.columns
+                h1 Our Culture
+                div.one-text
+                    p Morbi suscipit interdum molestie. Aenean fringilla dui magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis porttitor, velit et pretium porttitor, tellus massa porttitor tortor, accumsan cursus nulla nisi at tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est.
+
+        div.container
+
+            div.eight.columns
+                h4 We are innovative
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est.
+                p Morbi suscipit interdum molestie. Aenean fringilla dui magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+            div.eight.columns
+                h4 We are awesome
+                p Morbi suscipit interdum molestie. Aenean fringilla dui magna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis porttitor, velit et pretium porttitor.
+                p Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+    // End Culture Page
+
+    // Start Second Parallax Background (Twitter)
+    div#parallax2
+        div.bg2
+        div.pattern
+        div.container">
+            div.eleven.columns
+                div.vertical-text
+                    div.twtr
+                    img(alt="", src="images/social-icons/follow.png", style="margin-top: 36px;")
+
+    // End Second Parallax Background (Twitter)
+
+    // Start Services Page
+    div#services
+
+        div.container
+
+            div.sixteen.columns
+                h1 Our Services
+                div.one-text
+                    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+            // Start Icons
+            div.one-third.column
+                h3 Mobile Development
+                div.icon(style="background-image: url(./images/icons/photo.png)")
+                p.description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est.
+                p.description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum.
+
+            div.one-third.column
+                h3 Web Development
+                div.icon(style="background-image: url(./images/icons/video.png)")
+                p.description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum. Praesent porta, purus eget sagittis imperdiet, nulla mi ullamcorper metus, id hendrerit metus diam vitae est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+            div.one-third.column
+                h3 Custom App Development
+                div.icon(style="background-image: url(./images/icons/design.png)")
+                p.description Nulla lacinia odio quis tellus malesuada quis pulvinar augue tincidunt. Quisque sit amet nunc enim. Vestibulum convallis odio fringilla lectus tincidunt bibendum. Aenean venenatis. Nullam imperdiet, est blandit tristique blandit, massa nunc fermentum eros, non ullamcorper dolor dolor at quam.
+            // End Icons
+
+    // End Services Page
+
+    // Start Third Parallax Background (Clients)
+    div#parallax3
+        div.bg3
+        div.pattern
+        div.container
+            div.vertical-text
+                h2.white Our Clients
+                ul.clients
+                    li
+                        a(href="#")
+                            img(alt="", src="images/clients/logo1.png")
+                    li
+                        a(href="#")
+                            img(alt="", src="images/clients/logo2.png")
+                    li
+                        a(href="#")
+                            img(alt="", src="images/clients/logo3.png")
+                    li
+                        a(href="#")
+                            img(alt="", src="images/clients/logo4.png")
+                    li
+                        a(href="#")
+                            img(alt="", src="images/clients/logo5.png")
+
+    // End Third Parallax Background (Clients)
+
+
+    // Start Portfolio Page
+    div#portfolio
+
+        div.container
+
+            div.sixteen.columns
+                h1 Portfolio
+
+            // Start Project
+            div.four.columns
+                a(href="images/slider/image1.jpg", rel="prettyPhoto[gallery1]", title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum.")
+                    div.img-wrp
+                        img.scaleimg(src="images/portfolio/thumbs/image1.jpg", alt="MONELLE EUROPE PHOTOSHOOTS")
+                        div.overlay-wrp
+                            i.icon.loupe.overlay-content
+                            div.overlay
+                p.project-title Monelle Europe Photoshoots
+                p.project-description Monelle Worldwide Inc.
+
+                // Start Example PrettyPhoto Gallery
+                div.hidden
+                    a(href="images/slider/image2.jpg", rel="prettyPhoto[gallery1]", title="Nulla lacinia odio quis tellus malesuada quis pulvinar augue tincidunt. Quisque sit amet nunc enim. Vestibulum convallis odio fringilla lectus tincidunt bibendum.")
+                        img.scaleimg(src="images/portfolio/thumbs/image1.jpg", style="display:hidden;", alt="MONELLE EUROPE PHOTOSHOOTS")
+                div.hidden
+                    a(href="images/slider/image3.jpg", rel="prettyPhoto[gallery1]", title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum.")
+                        img.scaleimg(src="images/portfolio/thumbs/image1.jpg", style="display:hidden;", alt="MONELLE EUROPE PHOTOSHOOTS")
+                div.hidden
+                    a(href="images/slider/image4.jpg", rel="prettyPhoto[gallery1]", title="Quisque sit amet nunc enim. Vestibulum convallis odio fringilla lectus tincidunt bibendum.")
+                        img.scaleimg(src="images/portfolio/thumbs/image1.jpg", style="display:hidden;", alt="MONELLE EUROPE PHOTOSHOOTS")
+                // End Example PrettyPhoto Gallery
+
+            // End Project
+
+            // Start Project
+            div.four.columns
+                a(href="images/slider/image1.jpg", rel="prettyPhoto[gallery1]", title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum.")
+                    div.img-wrp
+                        img.scaleimg(src="images/portfolio/thumbs/image1.jpg", alt="MONELLE EUROPE PHOTOSHOOTS")
+                        div.overlay-wrp
+                            i.icon.loupe.overlay-content
+                            div.overlay
+                p.project-title Monelle Europe Photoshoots
+                p.project-description Monelle Worldwide Inc.
+
+                // Start Example PrettyPhoto Gallery
+                div.hidden
+                    a(href="images/slider/image2.jpg", rel="prettyPhoto[gallery1]", title="Nulla lacinia odio quis tellus malesuada quis pulvinar augue tincidunt. Quisque sit amet nunc enim. Vestibulum convallis odio fringilla lectus tincidunt bibendum.")
+                        img.scaleimg(src="images/portfolio/thumbs/image1.jpg", style="display:hidden;", alt="MONELLE EUROPE PHOTOSHOOTS")
+                div.hidden
+                    a(href="images/slider/image3.jpg", rel="prettyPhoto[gallery1]", title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum.")
+                        img.scaleimg(src="images/portfolio/thumbs/image1.jpg", style="display:hidden;", alt="MONELLE EUROPE PHOTOSHOOTS")
+                div.hidden
+                    a(href="images/slider/image4.jpg", rel="prettyPhoto[gallery1]", title="Quisque sit amet nunc enim. Vestibulum convallis odio fringilla lectus tincidunt bibendum.")
+                        img.scaleimg(src="images/portfolio/thumbs/image1.jpg", style="display:hidden;", alt="MONELLE EUROPE PHOTOSHOOTS")
+                // End Example PrettyPhoto Gallery
+
+            // End Project
+
+            // Start Project
+            div.four.columns
+                a(href="images/slider/image1.jpg", rel="prettyPhoto[gallery1]", title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum.")
+                    div.img-wrp
+                        img.scaleimg(src="images/portfolio/thumbs/image1.jpg", alt="MONELLE EUROPE PHOTOSHOOTS")
+                        div.overlay-wrp
+                            i.icon.loupe.overlay-content
+                            div.overlay
+                p.project-title Monelle Europe Photoshoots
+                p.project-description Monelle Worldwide Inc.
+
+                // Start Example PrettyPhoto Gallery
+                div.hidden
+                    a(href="images/slider/image2.jpg", rel="prettyPhoto[gallery1]", title="Nulla lacinia odio quis tellus malesuada quis pulvinar augue tincidunt. Quisque sit amet nunc enim. Vestibulum convallis odio fringilla lectus tincidunt bibendum.")
+                        img.scaleimg(src="images/portfolio/thumbs/image1.jpg", style="display:hidden;", alt="MONELLE EUROPE PHOTOSHOOTS")
+                div.hidden
+                    a(href="images/slider/image3.jpg", rel="prettyPhoto[gallery1]", title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum.")
+                        img.scaleimg(src="images/portfolio/thumbs/image1.jpg", style="display:hidden;", alt="MONELLE EUROPE PHOTOSHOOTS")
+                div.hidden
+                    a(href="images/slider/image4.jpg", rel="prettyPhoto[gallery1]", title="Quisque sit amet nunc enim. Vestibulum convallis odio fringilla lectus tincidunt bibendum.")
+                        img.scaleimg(src="images/portfolio/thumbs/image1.jpg", style="display:hidden;", alt="MONELLE EUROPE PHOTOSHOOTS")
+                // End Example PrettyPhoto Gallery
+            // End Project
+
+            // Start Project
+            div.four.columns
+                a(href="images/slider/image1.jpg", rel="prettyPhoto[gallery1]", title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum.")
+                    div.img-wrp
+                        img.scaleimg(src="images/portfolio/thumbs/image1.jpg", alt="MONELLE EUROPE PHOTOSHOOTS")
+                        div.overlay-wrp
+                            i.icon.loupe.overlay-content
+                            div.overlay
+                p.project-title Monelle Europe Photoshoots
+                p.project-description Monelle Worldwide Inc.
+                // Start Example PrettyPhoto Gallery
+                div.hidden
+                    a(href="images/slider/image2.jpg", rel="prettyPhoto[gallery1]", title="Nulla lacinia odio quis tellus malesuada quis pulvinar augue tincidunt. Quisque sit amet nunc enim. Vestibulum convallis odio fringilla lectus tincidunt bibendum.")
+                        img.scaleimg(src="images/portfolio/thumbs/image1.jpg", style="display:hidden;", alt="MONELLE EUROPE PHOTOSHOOTS")
+                div.hidden
+                    a(href="images/slider/image3.jpg", rel="prettyPhoto[gallery1]", title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac augue at erat hendrerit dictum.")
+                        img.scaleimg(src="images/portfolio/thumbs/image1.jpg", style="display:hidden;", alt="MONELLE EUROPE PHOTOSHOOTS")
+                div.hidden
+                    a(href="images/slider/image4.jpg", rel="prettyPhoto[gallery1]", title="Quisque sit amet nunc enim. Vestibulum convallis odio fringilla lectus tincidunt bibendum.")
+                        img.scaleimg(src="images/portfolio/thumbs/image1.jpg", style="display:hidden;", alt="MONELLE EUROPE PHOTOSHOOTS")
+                // End Example PrettyPhoto Gallery
+            // End Project
+
+    // End Portfolio Page
+
+    // Start Contact Page -->
+    div#contact
+        div.pattern
+        div.container
+            div.sixteen.columns
+                // Start Contact Block
+                div.card
+                    h1.white Contacts Us
+                    div.lines
+                        p
+                            a(href="#") hello@gittie.com
+                            br
+                            span +44 123-456-7890, 321-654-0987
+                        p.adress 77a First Street, London, BC1A 4RT, United Kingdom
+
+                        ul.contact-social-icons
+                            li
+                                a(href="#")
+                                    img(alt="", src="images/social-icons/facebook-big.png")
+                            li
+                                a(href="#")
+                                    img(alt="", src="images/social-icons/twitter-big.png")
+                            li
+                                a(href="#")
+                                    img(alt="", src="images/social-icons/googleplus-big.png")
+
+                // End Contact Block
+
+            div.copyright
+            p © 2012 GittieLabs.
+                span
+                    a(href="http://themes.tvda.eu/") Kutcher Template
+                span by
+                    a(href="http://themes.tvda.eu/") TVDA
+    // End Contact Page
+
+    script type="text/javascript">
+        function moveTo(contentArea){
+            var goPosition = $(contentArea).offset().top;
+            $('html,body').animate({ scrollTop: goPosition}, 'slow');
+        }
+
+
+    script type="text/javascript">
+        $(document).ready(function(){
+          $("a[rel^='prettyPhoto']").prettyPhoto();
+        });
