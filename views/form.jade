@@ -1,0 +1,28 @@
+//
+   Created with JetBrains WebStorm.
+   User: keithelliott
+   Date: 1/30/13
+   Time: 2:02 PM
+   To change this template use File | Settings | File Templates.
+extends layout
+
+block content
+div.container(style="margin-top:60px;")
+    div.ten.columns
+        p
+            a(href="/")← Back to template
+        h1 Form and Buttons
+        form
+            label Input
+            input(type="text")
+            label Error Input
+            input.error(type="text")
+            label Textarea
+            textarea
+        a.small.button(href="#") Small Button
+        br
+        br
+        a.button
+        br
+        br
+        a.large.button(href="#") Large Button
