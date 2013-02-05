@@ -31,9 +31,9 @@
 					thumb_links				:	0,			// Individual thumb links for each slide
 					thumbnail_navigation    :   0,			// Thumbnail navigation
 					slides 					:  	[			// Slideshow Images
-														{image : './images/slider/image1.png', title : 'Responsive Design <div class="slidedescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lectus purus, tempus vel egestas sit amet, dignissim ac odio. Mauris at magna enim. Phasellus gravida faucibus ante, sit amet posuere neque pharetra quis. In cursus congue mattis. In hac habitasse platea dictumst. Duis sodales eleifend odio, suscipit sodales nibh aliquam vitae.</div>', thumb : '', url : 'http://themes.tvda.eu/'},
-														{image : './images/slider/image3.jpg', title : 'Fullscreen gallery <div class="slidedescription">Nam at mauris eu dolor tincidunt faucibus sit amet ut lectus. Quisque quam leo, viverra a varius sed, gravida eget urna. Sed nec sem non mauris aliquam pulvinar. Vivamus sollicitudin blandit dui in consectetur. Ut et massa purus. Curabitur consectetur ipsum id elit tempus consectetur.</div>', thumb : '', url : 'http://themes.tvda.eu/'},
-														{image : './images/slider/image2.jpg', title : 'Parallax Background <div class="slidedescription">Integer malesuada massa nec arcu porttitor mattis dapibus nisi elementum. Integer tincidunt imperdiet elit nec dapibus. Sed sed tortor in justo porttitor placerat vitae sed nibh. Phasellus interdum feugiat consequat. Nam iaculis dui vitae arcu adipiscing sagittis vehicula augue imperdiet.</div>', thumb : '', url : 'http://themes.tvda.eu/'}
+														{image : './images/slider/image1.png', title : 'Web Design <div class="slidedescription"> Your site is more than just a few pixels on a screen.  Let us help you plan and execute from the initial idea to UI implementation.  </div>', thumb : '', url : ''},
+														{image : './images/slider/image3.jpg', title : 'Mobile <div class="slidedescription">Need a mobile application?  We can help you develop and create native iOS apps or mobile web apps. Have a site, we can turn it into a responsive site that can be viewed on mobile phones and tablets.</div>', thumb : '', url : 'http://themes.tvda.eu/'},
+														{image : './images/slider/image2.jpg', title : 'Custom Development <div class="slidedescription">Need a custom front-end or back-end solution?  We have you covered. </div>', thumb : '', url : 'http://themes.tvda.eu/'}
 ],
 												
 					// Theme Options			   
