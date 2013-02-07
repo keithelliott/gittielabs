@@ -7,7 +7,7 @@ $(document).ready(function() {
 	}*/
 	var fileref = document.createElement('script');	
 	fileref.setAttribute("type","text/javascript");
-	fileref.setAttribute("src", "http://search.twitter.com/search.json?q=&from=mrkeithelliott&lang=en&callback=TweetTick&rpp=1");
+	fileref.setAttribute("src", "http://search.twitter.com/search.json?q=&from=gittielabs&lang=en&callback=TweetTick&rpp=1");
 	document.getElementsByTagName("head")[0].appendChild(fileref);
 });
  
