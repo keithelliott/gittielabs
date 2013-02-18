@@ -1,6 +1,7 @@
 {
   "name": "gittielabs",
   "subdomain": "gittielabs",
+  "domains": ["www.gittie.com", "gittie.com"],
   "scripts": {
     "start": "node app.js"
   },
