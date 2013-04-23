@@ -1,0 +1,12 @@
+//
+   Created with JetBrains WebStorm.
+   User: keithelliott
+   Date: 4/21/13
+   Time: 9:22 PM
+   To change this template use File | Settings | File Templates.
+extends postlayout
+    h1 All Tags
+    ul
+        - each tag in tagList
+            li
+                a(href=tagUrl(tag)) #{tag}

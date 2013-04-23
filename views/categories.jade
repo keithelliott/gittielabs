@@ -1,0 +1,14 @@
+//
+   Created with JetBrains WebStorm.
+   User: keithelliott
+   Date: 4/21/13
+   Time: 9:19 PM
+   To change this template use File | Settings | File Templates.
+extends postlayout
+
+block content
+    h1 All Categories
+    ul
+        - each cat in categoryList
+            li
+                a(href=categoryUrl(cat)) #{cat}

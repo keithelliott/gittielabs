@@ -1,0 +1,48 @@
+!!! 5
+//if lt IE 7
+  html.no-js.ie6.oldie(lang='en')
+//if IE 7
+  html.no-js.ie7.oldie(lang='en')
+//if IE 8
+  html.no-js.ie8.oldie(lang='en')
+//[if gt IE 8]><!
+html.no-js(lang='en')
+    //<![end if]
+    head
+        meta(charset="UTF-8")
+        title Gittie Labs
+        meta(name="description", content="")
+        meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+        //Google Web Fonts
+        link(rel="icon", href="/images/favicon.ico", type="image/x-icon")
+        link(rel="shortcut icon", href="/images/favicon.ico", type="image/x-icon")
+        link(href='http://fonts.googleapis.com/css?family=Oswald|Open+Sans:400,600', rel='stylesheet', type='text/css')
+        //CSS Responsive Framework Skeleton
+        link(rel="stylesheet", href="/css/skeleton.css")
+        //CSS Styles
+        link(rel="stylesheet", href="/css/style.css")
+
+        title= 'GittieLab Blog'
+        meta(charset='utf-8')
+        link(rel='stylesheet', href='/css/bootstrap.css')
+    body
+        .navbar.navbar-fixed-top
+            .navbar-inner
+                .container
+                    a.brand(href='/') GittieLabs Blog
+        div.container
+            div.sixteen.columns
+                div.row
+                    div.twelve.columns
+                        block content
+                    div.four.columns
+                        .well.sidebar-nav
+                            ul.nav.nav-list
+                                li.nav-header categories
+                                - each cat in categoryList
+                                    li
+                                        a(href=categoryUrl(cat)) #{cat}
+                                li.nav-header tags
+                                - each tag in tagList
+                                    li
+                                        a(href=tagUrl(tag)) #{tag}
