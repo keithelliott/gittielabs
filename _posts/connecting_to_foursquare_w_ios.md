@@ -1,4 +1,4 @@
-{{{ "title" : "Connecting to Foursquare with iOS", "tags" : ["foursquare", "api", "iOS", "objective c" ], "category" : "ios", "date" : "4-23-2013" }}}
+{{{ "title" : "Connecting to Foursquare with iOS", "tags" : ["foursquare", "api", "iOS", "objective c" ], "category" : "ios", "date" : "4-23-2013", "author": "Keith Elliott" }}}
 
 Recently, I had the need to connect to Foursquare API for an app that I was working on.  Foursquare uses OAuth 2.0, which is the standard that most API providers has migrated to.   Therefore, In this tutorial, I will show you how to handle OAuth in an iOS application.  We will be referencing foursquare’s document located [here](https://developer.foursquare.com/overview/auth) from time to time during this tutorial.
 
