@@ -9,6 +9,9 @@ div.post
         a(href=post.url)
             = post.title
     span.date #{post.date.getMonth()+1}.#{post.date.getDate()}.#{post.date.getFullYear()}
+    span(style='padding-left: 7px;') by
+        span(style='padding-left: 3px;')
+            = post.author
     div.post.content
         != post.preview
     div.tags
