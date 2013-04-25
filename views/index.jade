@@ -263,8 +263,12 @@ block content
 
     script type="text/javascript">
         function moveTo(contentArea){
-            var goPosition = $(contentArea).offset().top;
-            $('html,body').animate({ scrollTop: goPosition}, 'slow');
+            if(contentArea === '/page/1')
+                window.location.href= contentArea;
+            else{
+                var goPosition = $(contentArea).offset().top;
+                $('html,body').animate({ scrollTop: goPosition}, 'slow');
+            }
         }
 
 

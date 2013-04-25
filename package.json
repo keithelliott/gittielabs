@@ -2,12 +2,13 @@
   "name": "gittielabs",
   "subdomain": "gittielabs",
   "domains": [
-				"gittie.com", "www.gittie.com"
-	],
+    "gittie.com",
+    "www.gittie.com"
+  ],
   "scripts": {
     "start": "node app.js"
   },
-  "version": "0.0.1-2",
+  "version": "0.0.1-13",
   "dependencies": {
     "express": ">=3.1.0",
     "jade": "*",

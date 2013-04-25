@@ -17,6 +17,7 @@ html.no-js(lang='en')
         link(rel="icon", href="/images/favicon.ico", type="image/x-icon")
         link(rel="shortcut icon", href="/images/favicon.ico", type="image/x-icon")
         link(href='http://fonts.googleapis.com/css?family=Oswald|Open+Sans:400,600', rel='stylesheet', type='text/css')
+        link(rel='stylesheet', href='/css/bootstrap.css')
         //CSS Responsive Framework Skeleton
         link(rel="stylesheet", href="/css/skeleton.css")
         //CSS Styles
@@ -24,25 +25,26 @@ html.no-js(lang='en')
 
         title= 'GittieLab Blog'
         meta(charset='utf-8')
-        link(rel='stylesheet', href='/css/bootstrap.css')
+
     body
         .navbar.navbar-fixed-top
             .navbar-inner
                 .container
                     a.brand(href='/') GittieLabs Blog
-        div.container
-            div.sixteen.columns
-                div.row
-                    div.twelve.columns
-                        block content
-                    div.four.columns
-                        .well.sidebar-nav
-                            ul.nav.nav-list
-                                li.nav-header categories
-                                - each cat in categoryList
-                                    li
-                                        a(href=categoryUrl(cat)) #{cat}
-                                li.nav-header tags
-                                - each tag in tagList
-                                    li
-                                        a(href=tagUrl(tag)) #{tag}
+        div#blog
+            div.container
+                div.sixteen.columns
+                    div.row
+                        div.twelve.columns
+                            block content
+                        div.four.columns
+                            .well.sidebar-nav
+                                ul.nav.nav-list
+                                    li.nav-header categories
+                                    - each cat in categoryList
+                                        li
+                                            a(href=categoryUrl(cat)) #{cat}
+                                    li.nav-header tags
+                                    - each tag in tagList
+                                        li
+                                            a(href=tagUrl(tag)) #{tag}

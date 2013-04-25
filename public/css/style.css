@@ -507,7 +507,7 @@ Parallax
 Content
 --------------------------------------------------------*/
 
-#about, #culture, #services, #portfolio {
+#about, #culture, #services, #portfolio, #blog {
 	padding-top: 64px;
 	padding-bottom: 80px;
 	position: relative;
