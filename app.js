@@ -6,6 +6,7 @@
 var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
+  , wwm = require('./routes/winewithme')
   , http = require('http')
   , path = require('path')
   , app = express()
@@ -40,7 +41,7 @@ app.configure('development', function(){
 
 app.get('/', routes.index);
 
-app.get('/winewithme', routes.index);
+app.get('/winewithme', wwm.index);
 
 app.get( '/post/:post', function ( req, res ) {
     var post = req.poet.getPost( req.params.post );
