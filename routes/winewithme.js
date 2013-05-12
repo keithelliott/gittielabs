@@ -6,5 +6,5 @@
  * To change this template use File | Settings | File Templates.
  */
 exports.index = function(req, res){
-    res.render('index');
+    res.render('www_index');
 };
