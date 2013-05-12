@@ -39,6 +39,9 @@ app.configure('development', function(){
 });
 
 app.get('/', routes.index);
+
+app.get('/winewithme', routes.index);
+
 app.get( '/post/:post', function ( req, res ) {
     var post = req.poet.getPost( req.params.post );
     if ( post ) {
@@ -47,6 +50,7 @@ app.get( '/post/:post', function ( req, res ) {
         res.send(404);
     }
 });
+
 
 app.get( '/tag/:tag', function ( req, res ) {
     var taggedPosts = req.poet.postsWithTag( req.params.tag );
