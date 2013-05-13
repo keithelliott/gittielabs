@@ -626,7 +626,7 @@ Content
 .pitch {
     position: absolute;
     overflow-wrap:break-word;
-    bottom: 60px;
+    top: 10px;
     min-height: 220px;
     color: white;
     font: 600 14px "Open Sans", Helvetica, Arial, sans-serif;
