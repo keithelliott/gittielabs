@@ -31,9 +31,9 @@
 					thumb_links				:	0,			// Individual thumb links for each slide
 					thumbnail_navigation    :   0,			// Thumbnail navigation
 					slides 					:  	[			// Slideshow Images
-														{image : './images/slider/image1.png', title : 'Web Design <div class="slidedescription"> Your site is more than just a few pixels on a screen.  Let us help you plan and execute from the initial idea to UI implementation.  </div>', thumb : '', url : ''},
-														{image : './images/slider/image3.jpg', title : 'Mobile <div class="slidedescription">Need a mobile application?  We can help you develop and create native iOS apps or mobile web apps. Have a site, we can turn it into a responsive site that can be viewed on mobile phones and tablets.</div>', thumb : '', url : ''},
-														{image : './images/slider/image2.jpg', title : 'Custom Development <div class="slidedescription">Need a custom front-end or back-end solution?  We have you covered. </div>', thumb : ''}
+														{image : './images/slider/wine_bottle_restaurant.jpg', title : '', thumb : '', url : ''},
+														{image : './images/slider/wine_cork.jpg', title : '', thumb : '', url : ''},
+														{image : './images/slider/wine_cellar.jpg', title : '', thumb : '', url : ''}
 ],
 												
 					// Theme Options			   

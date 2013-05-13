@@ -1,6 +1,22 @@
-extends layout
+extends winebaseLayout
+
 block content
+    // Start Homepage
     div#homepage
         div.container
             div.sixteen.columns
-                h1 WineWithMe
+                img.logo(src="images/logo-WWM-big.png")
+            div.sixteen.columns.pitch
+                h3.white Why Wine With Me?
+                p Whether it's after a long day at work, after the kids go to bed, or just a glass a day (for health, of course), we love a good wine.  My fiancee and I often drink a glass or buy a bottle we really like... or one that we really hate... then promptly forget the goods and the bads, the bitters and the sweets, and opt for a random choosing the next time we're out.  What we really need is a way to catalogue a snapshot of each wine we drink in order to keep our palettes happy.
+                br
+                h3.white Enter Wine With Me.
+                p This app allows the user to keep a record of wine in his or her own cellar, note the important parts, and even remember where it was purchased. You'll be able to share your cellars with friends, recommend a wine to a friend, and search through wines others rated. Just like a face to a name, put a picture to a bottle. Like a deep red? Give it a five star rating.  Enjoyed it while celebrating? Write that in the notes section.  Drinkable and under $5? Heck yeah; put that in there as well.  Wine With Me is a great way to learn your own tastes, whether you're a wine snob or just an average joe wine drinker.  Enjoy a glass - Wine With Me!
+                br
+                h3.white Give it to me, baby.
+                p We're currently developing the awesomeness that is this app.  How about we notify you when it's all set and you can begin amassing your cellar?  Simply enter your email address below and we'll keep you up to date.  Worry not - we're not gonna sell your info.  We don't like that, so we don't do that.
+                br
+                form(action="")
+                    input#email(type="email", placeholder='Enter your email address',style='width:60%;')
+                    a#addEmailAction.button.large submit
+// End Homepage
