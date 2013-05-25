@@ -8,11 +8,12 @@
   "scripts": {
     "start": "node app.js"
   },
-  "version": "0.0.1-23",
+  "version": "0.0.1-32",
   "dependencies": {
     "express": ">=3.1.0",
     "jade": "*",
-    "poet": "*"
+    "poet": "*",
+    "twilio": "*"
   },
   "engines": {
     "node": ">= 0.6.6"

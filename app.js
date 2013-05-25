@@ -10,7 +10,10 @@ var express = require('express')
   , http = require('http')
   , path = require('path')
   , app = express()
-  , poet = require('poet')(app);
+  , poet = require('poet')(app)
+  , twilio = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN)
+  , client = require('twilio')
+  , hoodhero = require('./routes/hoodhero');
 
 poet.set({
     posts: './_posts/',  // Directory of posts
@@ -41,6 +44,9 @@ app.configure('development', function(){
 
 app.get('/', routes.index);
 
+/**
+ * Wine with me route
+ */
 app.get('/winewithme', wwm.index);
 
 app.get( '/post/:post', function ( req, res ) {
@@ -52,7 +58,9 @@ app.get( '/post/:post', function ( req, res ) {
     }
 });
 
-
+/**
+ * Blog routes
+ */
 app.get( '/tag/:tag', function ( req, res ) {
     var taggedPosts = req.poet.postsWithTag( req.params.tag );
     if ( taggedPosts.length ) {
@@ -82,8 +90,33 @@ app.get( '/page/:page', function ( req, res ) {
     });
 });
 
+/**
+ * Twilio routes
+ */
+app.post('/voice',function(req,res){
+    console.log('entering voice route');
+     var resp = new client.TwimlResponse();
+        resp.say('Why hello sexy lady! Time for bed?');
 
+        res.type('text/xml');
+        res.send(resp.toString());
+});
 
+//app.get('/voice',function(req,res){
+//    console.log('entering voice route');
+//    if (client.validateExpressRequest(req, process.env.TWILIO_AUTH_TOKEN)) {
+//        var resp = new client.TwimlResponse();
+//        resp.say('Why hello sexy lady! Time for bed?');
+//
+//        res.type('text/xml');
+//        res.send(resp.toString());
+//    }
+//    else {
+//        res.send('you are not twilio.  Buzz off.');
+//    }
+//});
+
+app.get('/sms', hoodhero.sms);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
